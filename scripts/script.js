@@ -1,4 +1,9 @@
 let myImage = document.querySelector('img');
+let imagen = document.getElementById ("imagen");
+let contenedor = document.getElementById ("contenedor");
+let MaxWidth = contenedor.offsetWidth;
+let imagenWidth = imagen.offsetWidth;
+let posX = MaxWidth;
 
 myImage.onclick = function() {
   let mySrc = myImage.getAttribute('src');
@@ -33,3 +38,16 @@ if (!localStorage.getItem('name')){
 myButton.onclick= function (){
   setUserName ();
   }
+
+ function moverImagen() {
+         if (posX + imagenWidth > 0) {
+                posX -= 2; 
+                imagen.style.left = posX + 'px';
+                requestAnimationFrame(moverImagen);
+            } else {
+                posX = maxWidth; 
+                moverImagen(); 
+         }
+        }
+
+        moverImagen();
