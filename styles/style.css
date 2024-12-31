@@ -1,8 +1,17 @@
 html {
-font-size: 12px;
+font-size: 11px;
 font-family: "Gill sans", sans-serif;
 background-color: rgb(180, 218, 50);
 }
+
+body {
+width: 90%;
+max-width: 600px;
+padding: 20px;
+margin: 0 auto;
+}
+
+/* Titulo */
 h1 {
 font-size: 30px;
 font-family: Georgia, serif;
@@ -10,12 +19,16 @@ text-align: center;
 color: green;
 text-shadow: 1px 1.5px 1px lightgreen;
 }
-body {
-width: 90%;
-max-width: 600px;
-padding: 20px;
+
+/*imagen*/
+img {
+display: block;
 margin: 0 auto;
+max-width: 100%;
+height: auto;
 }
+
+/*párrafo y lista*/
 p, li {
 line-height: 1.4;
 word-wrap: break-word;
@@ -23,6 +36,26 @@ overflow-wrap: break-word;
 max-width: 100%;
 }
 
+/*boton*/
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 25px;
+  font-size: 1.8rem;
+  background-color: #840ABC;
+  color: white;
+  border:none;
+  border-radius:8px;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, transform 0.2s;
+}
+button:hover{
+  background-color: red;
+  transform: scale (1.05);
+}
+
+/* Avion*/
 #movimiento {
 width: 50px;
 height: 50px;
@@ -37,17 +70,5 @@ background-color: transparent;
 z-index: 1000;
 }
 
-img {
-display: block;
-margin: 0 auto;
 
-max-width: 100%;
-height: auto;
-}
-#imagen-grande {
-display: block;
-margin: 20px auto;
-max-width: 100%;
-height: auto;
-cursor: pointer;
-}
+
