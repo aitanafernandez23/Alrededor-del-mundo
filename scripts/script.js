@@ -45,7 +45,7 @@ myButton.onclick= function (){
                 imagen.style.left = posX + 'px';
                 requestAnimationFrame(moverImagen);
             } else {
-                posX = maxWidth; 
+                posX = MaxWidth; 
                 moverImagen(); 
          }
         }
