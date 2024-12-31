@@ -1,1 +1,0 @@
-Durante mi proyecto no he tenido un código de conducta como tal ya que he trabajado individualmente por lo que la investigación y proceso de elaboración de la web ha sido individual realizado todo a mi ritmo y manera.
