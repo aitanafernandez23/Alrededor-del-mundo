@@ -22,16 +22,21 @@ word-wrap: break-word;
 overflow-wrap: break-word;
 max-width: 100%;
 }
-#imagen-avion {
+
+#movimiento {
 width: 50px;
 height: 50px;
 position: absolute;
 top: 5%;
 left: 0;
-transform: translateY(-50%);
-cursor: pointer;
-transition: transform 0.3s ease-in-out;
+background-image: url("https://img.icons8.com/?size=100&id=HrxNQff0Qrmc&format=png&color=000000");
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+background-color: transparent;
+z-index: 1000;
 }
+
 img {
 display: block;
 margin: 0 auto;
