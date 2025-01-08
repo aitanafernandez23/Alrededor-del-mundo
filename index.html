@@ -2,38 +2,50 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mi página web individual</title>
-<link href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi página web individual</title>
+  <link href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+
+  <style>
+    /* Animación CSS para mover el objeto */
+    @keyframes moverObjeto {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(100vw); /* Mueve el objeto hasta el final de la pantalla */
+      }
+    }
+
+    /* Estilo del objeto que se moverá */
+    #movingObject {
+      width: 50px;
+      height: 50px;
+      background-color: #3498db;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      animation: moverObjeto 5s linear infinite; /* Animación de 5 segundos, se repite infinitamente */
+    }
+  </style>
 </head>
 <body>
   <h1>Alrededor del mundo!</h1>
-  
-<img id="myImage" src="https://vectorfreefiles.com/media/thumb/fit/501x353/62288acbd3c5b.jpg" alt="Mapa del
-mundo">
-<p>En "Alrededor del mundo" pretendemos fomentar las ganas y la pasión por conocer el
-mundo en el que vivimos, así como las diferentes culturas que nos rodean. Además,
-mostramos una manera fácil y económica de viajar alrededor del planeta. Este sitio web es
-para ti si:</p>
-  
-<ul>
- <li>Te gusta viajar pero no sabes exactamente dónde ir.</li>
- <li>Quieres salir de tu casa pero necesitas <strong>recomendaciones y alternativas
- económicas</strong>.</li>
- <li>Te interesan las distintas culturas de nuestro mundo y quieres aprender más sobre
- ellas.</li>
-</ul>
-  
-<p>Trabajamos de manera constante y perseverante para cumplir con las satisfacciones
-del lector e invitar a descubrir nuevas aventuras.</p>
 
-  <button id="myButton">Cambiar de usuario</button>
-  <h2 id="user-name"> Tu nombre aquí </h2>
+  <img id="myImage" src="https://vectorfreefiles.com/media/thumb/fit/501x353/62288acbd3c5b.jpg" alt="Mapa del mundo">
+  <p>En "Alrededor del mundo" pretendemos fomentar las ganas y la pasión por conocer el
+    mundo en el que vivimos, así como las diferentes culturas que nos rodean. Además,
+    mostramos una manera fácil y económica de viajar alrededor del planeta. Este sitio web es
+    para ti si:</p>
 
-<!--Objeto en movimiento-->
-<div id="movimiento" class="avion"></div>
-  
-<script src="scripts/script.js"></script>
+  <ul>
+    <li>Te gusta viajar pero no sabes exactamente dónde ir.</li>
+    <li>Quieres salir de tu casa pero necesitas <strong>recomendaciones y alternativas económicas</strong>.</li>
+    <li>Te interesan las distintas culturas de nuestro mundo y quieres aprender más sobre ellas.</li>
+  </ul>
+
+  <!-- Objeto que se mueve -->
+  <div id="movingObject"></div>
 </body>
 </html>
