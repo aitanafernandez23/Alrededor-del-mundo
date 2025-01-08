@@ -1,4 +1,4 @@
-let myImage = document.querySelector("#myImage");
+ let myImage = document.querySelector("#myImage");
 let myButton= document.querySelector ("#myButton");
 let myHeading = document.querySelector ("#user-name");
 let movimiento= document.querySelector ("#movimiento");
