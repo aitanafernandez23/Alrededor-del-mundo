@@ -20,7 +20,7 @@ function setUserName() {
     setUserName();
   } else {
     localStorage.setItem('name', myName);
-    myHeading.innerHTML = 'Alrededor del mundo,' + myName;
+    myHeading.innerHTML = 'Alrededor del mundo, ' + myName;
   }
 }
 
@@ -28,7 +28,7 @@ if (!localStorage.getItem('name')) {
   setUserName();
 } else {
   let storedName = localStorage.getItem('name');
-  myHeading.innerHTML = 'Alrededor del mundo' + storedName;
+  myHeading.innerHTML = 'Alrededor del mundo, ' + storedName;
 }
 
 myButton.onclick = function() {
